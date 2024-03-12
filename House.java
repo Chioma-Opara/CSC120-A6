@@ -109,10 +109,4 @@ public class House extends Building {
  * Idea of hw: what should be handled by the parent class, and what should be handled by the individual classes
  * for security reasons, we will never print out the entire list of house residents
  * why should hasDiningRoom or nResidents be private? You don't want other to be able to change it
-
-  CODE TESTER: 
-  public static void main(String[] args) {
-    new House();
-  }
-
-}
+ */
