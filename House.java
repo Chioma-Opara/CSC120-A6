@@ -17,7 +17,7 @@ public class House extends Building {
    * Getter for hasDining
    * @return a boolean representing whether or not the house has a dining
    */
-  public boolean getHasDining(){
+  public boolean getHasDiningRoom(){
     return this.hasDiningRoom;
   }
 
@@ -60,12 +60,7 @@ public class House extends Building {
    * @return whether or not person is a house resident
    */
   public boolean isResident(String person){
-    if (this.residents.contains(person)){
-      return true;
-    }
-    else{
-      return false; 
-    }
+    return this.residents.contains(person)
   }
 
   /**
