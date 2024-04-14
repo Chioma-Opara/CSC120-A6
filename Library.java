@@ -17,12 +17,7 @@ public class Library extends Building{
    * @return whether or not book is contained in library's collection
    */
   public boolean containsTitle(String title){
-    if (collection.containsKey(title)){
-      return true;
-    }
-    else{
-      return false;
-    }
+    return collection.containsKey(title)
   }
 
   /**
@@ -55,7 +50,7 @@ public class Library extends Building{
    */
   public String removeTitle(String title){
     // if title is in collection, remove title
-    if (collection.contains(title)){
+    if (containsTitle(title)){
       collection.remove(title);
       System.out.println("You have successfully removed " + title + " from " + this.getName() + "'s collection.");
       return title;
